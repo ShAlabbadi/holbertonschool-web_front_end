@@ -570,9 +570,11 @@ ul.row {
 	padding: 2rem;
 	background-color: var(--color-light-grey);
 	text-decoration: none;
+	color: inherit;
 }
 
 .card-services a:hover {
 	color: var(--color-white);
 	background-color: var(--color-primary);
+	text-decoration: none;
 }
