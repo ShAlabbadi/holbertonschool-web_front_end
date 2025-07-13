@@ -20,15 +20,20 @@
 }
 
 .nav .nav-link::before {
-	transition: all var(--transition-duration) var(--transition-cubic-bezier);
-}
-
-.button {
-	transition:
-		color var(--transition-duration) var(--transition-cubic-bezier),
+	transition: width var(--transition-duration) var(--transition-cubic-bezier),
 		background-color var(--transition-duration) var(--transition-cubic-bezier);
 }
 
+.button {
+	transition-property: color, background-color;
+	transition-duration: var(--transition-duration);
+	transition-timing-function: var(--transition-cubic-bezier);
+}
+
 .card-work .card-inner {
-	transition: all var(--transition-duration) var(--transition-cubic-bezier);
+	transition: opacity var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.card-work .card-title {
+	transition: opacity var(--transition-duration) var(--transition-cubic-bezier);
 }
