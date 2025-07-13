@@ -3,7 +3,19 @@
 	--transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
-/* Card Work Transformations */
+.card-testimonial .card-quote {
+	position: relative;
+}
+
+.card-testimonial .card-quote::before {
+	content: "\201C";
+	position: absolute;
+	top: -4.5rem;
+	left: -1rem;
+	color: #efeded;
+	font-size: 10rem;
+	z-index: -1;
+}
 .card-work:hover .card-image {
 	transform: scale(1.2);
 	transition: var(--transition-duration) var(--transition-cubic-bezier);
@@ -20,7 +32,7 @@
 
 /* Button Animations */
 .button:hover {
-	transition: 
+	transition:
 		color var(--transition-duration) var(--transition-cubic-bezier),
 		background-color var(--transition-duration) var(--transition-cubic-bezier);
 }
