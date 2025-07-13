@@ -735,36 +735,25 @@ ul.row {
 	z-index: -1;
 }
 
-.card-work .card-outer {
-	transition: transform var(--transition-duration) var(--transition-cubic-bezier);
+.card-work:hover .card-image {
+	transform: scale(1.2);
+	transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-outer {
 	transform: scale(0.95);
 }
 
-.card-work .card-image {
-	transition: transform var(--transition-duration) var(--transition-cubic-bezier);
+.nav .nav-link::before {
+	transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
-.card-work:hover .card-image {
-	transform: scale(1.2);
+.button:hover {
+	transition-property: color, background-color;
+	transition-duration: var(--transition-duration);
+	transition-timing-function: var(--transition-cubic-bezier);
 }
 
 .card-work .card-inner {
-	transition: all var(--transition-duration) var(--transition-cubic-bezier);
-}
-
-.nav .nav-link::before {
-	transition: width var(--transition-duration) var(--transition-cubic-bezier),
-		background-color var(--transition-duration) var(--transition-cubic-bezier);
-}
-
-.button {
-	transition: color var(--transition-duration) var(--transition-cubic-bezier),
-		background-color var(--transition-duration) var(--transition-cubic-bezier);
-}
-
-.card-work .card-title {
-	transition: opacity var(--transition-duration) var(--transition-cubic-bezier);
+	transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
