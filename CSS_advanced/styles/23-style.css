@@ -559,6 +559,4 @@ ul.row {
 
 .social-link svg {
 	fill: var(--text-color);
-	display: inline-block;
-	vertical-align: middle; 
 }
