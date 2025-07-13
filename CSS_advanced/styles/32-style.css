@@ -3,41 +3,32 @@
 	--transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
-.card-testimonial .card-quote {
-	position: relative;
+.card-work .card-image {
+	transition: transform var(--transition-duration) var(--transition-cubic-bezier);
 }
 
-.card-testimonial .card-quote::before {
-	content: "\201C";
-	position: absolute;
-	top: -4.5rem;
-	left: -1rem;
-	color: #efeded;
-	font-size: 10rem;
-	z-index: -1;
-}
 .card-work:hover .card-image {
 	transform: scale(1.2);
-	transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.card-work .card-outer {
+	transition: transform var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-outer {
 	transform: scale(0.95);
 }
 
-/* Navigation Item Animations */
 .nav .nav-link::before {
-	transition: var(--transition-duration) var(--transition-cubic-bezier);
+	transition: all var(--transition-duration) var(--transition-cubic-bezier);
 }
 
-/* Button Animations */
-.button:hover {
+.button {
 	transition:
 		color var(--transition-duration) var(--transition-cubic-bezier),
 		background-color var(--transition-duration) var(--transition-cubic-bezier);
 }
 
-/* Card Inner Transition */
 .card-work .card-inner {
-	transition: var(--transition-duration) var(--transition-cubic-bezier);
+	transition: all var(--transition-duration) var(--transition-cubic-bezier);
 }
