@@ -50,6 +50,7 @@ a:hover {
 }
 
 a:active {
+	color: var(--color-primary);
 	background-color: var(--color-light-grey);
 }
 
